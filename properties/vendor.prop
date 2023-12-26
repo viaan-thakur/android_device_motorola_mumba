@@ -312,6 +312,7 @@ ro.vendor.dolby.dax.version=DAX3_3.12.0.8_r1
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
+vendor.perf.framepacing.enable=1
 
 # Radio
 persist.vendor.radio.aosp_usr_pref_sel=true
