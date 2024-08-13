@@ -368,6 +368,11 @@ on late-fs-charger
     # Boot time fs tune
     write /sys/block/dm-9/queue/read_ahead_kb 2048
 
+   # Charger
+   wait /sys/class/power_supply/battery/device/force_charger_suspend
+   chmod 0664 /sys/class/power_supply/battery/device/force_charger_suspend
+   chown vendor_tcmd system /sys/class/power_supply/battery/device/force_charger_suspend
+
 service vendor.mmi-block-perm /vendor/bin/init.mmi.block_perm.sh
     class main
     user root
