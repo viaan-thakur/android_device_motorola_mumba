@@ -6,6 +6,17 @@
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := true
 
+# Mountpoints/Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+PRODUCT_PACKAGES += \
+    vendor_bt_firmware_mountpoint \
+    vendor_dsp_mountpoint \
+    vendor_firmware_mnt_mountpoint \
+    vendor_fsg_mountpoint \
+    vendor_super_fsg_mountpoint \
+    vendor_super_modem_mountpoint
+
 # pKVM
 $(call inherit-product, packages/modules/Virtualization/apex/product_packages.mk)
 
