@@ -266,6 +266,11 @@ BOARD_SHIPPING_API_LEVEL := 202404
 PRODUCT_SHIPPING_API_LEVEL := 36
 
 # Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors-service.multihal \
+    sensors.dynamic_sensor_hal \
+    sensors.moto_ext
+
 PRODUCT_COPY_FILES += \
         frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_parrot/android.hardware.sensor.accelerometer.xml \
         frameworks/native/data/etc/android.hardware.sensor.barometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_parrot/android.hardware.sensor.barometer.xml \
