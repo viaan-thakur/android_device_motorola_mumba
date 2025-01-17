@@ -38,6 +38,7 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # NFC
 ro.nfc.port=I2C
+persist.nfc_cfg.config_file_name=libnfc-nci-st.conf
 
 # Radio
 persist.rild.nitz_long_ons_0=

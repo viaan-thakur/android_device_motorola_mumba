@@ -957,15 +957,15 @@ vendor/lib64/libnativecospatchkernel-thales.so
 vendor/lib64/libnativecosupdateapi-thales.so
 
 # NFC
-vendor/bin/hw/android.hardware.nfc-service-st
 vendor/bin/STFlashTool
-
-# NFC Configs
 vendor/etc/init/nfc-service-st.rc
 vendor/etc/libnfc-hal-st-prc.conf
 vendor/etc/libnfc-hal-st.conf
 vendor/etc/libnfc-nci-st-felica.conf
 vendor/etc/libnfc-nci-st.conf
+vendor/lib64/libstnfc-auth.so
+vendor/lib64/libstnfc-streset.so
+vendor/lib64/nfc_nci.st21nfc.st.so
 
 # IFAA
 vendor/bin/hw/com.motorola.hardware.ifaa-V1-service
@@ -1594,11 +1594,6 @@ vendor/etc/sensors/sns_reg_config
 vendor/lib64/libminkdescriptor.so
 vendor/lib64/libminksocket_vendor.so
 vendor/lib64/libqcbor.so
-
-# Nfc
-vendor/lib64/libstnfc-auth.so
-vendor/lib64/libstnfc-streset.so
-vendor/lib64/nfc_nci.st21nfc.st.so
 
 # Snapdragon Computer Vision Engine
 vendor/lib64/libscveCommon.so
