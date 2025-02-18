@@ -955,7 +955,6 @@ vendor/lib64/libnativecospatchkernel-thales.so
 vendor/lib64/libnativecosupdateapi-thales.so
 
 # NFC
-vendor/bin/STFlashTool
 vendor/etc/init/nfc-service-st.rc
 vendor/etc/libnfc-hal-st-prc.conf
 vendor/etc/libnfc-hal-st.conf

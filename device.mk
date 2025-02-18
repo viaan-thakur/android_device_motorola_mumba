@@ -203,7 +203,6 @@ PRODUCT_PACKAGES += \
     init.vendor.st21nfc.rc \
     ueventd.qcom.rc
 
-
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := true
 
