@@ -289,6 +289,11 @@ persist.vendor.qfp=true
 vendor.gatekeeper.disable_spu=true
 vendor.gatekeeper.is_security_level_spu=0
 
+# FM
+ro.vendor.fm.use_audio_session=true
+vendor.hw.fm.init=0
+vendor.qcom.bluetooth.soc=cherokee
+
 # Media
 debug.stagefright.c2inputsurface=-1
 debug.stagefright.ccodec=4
