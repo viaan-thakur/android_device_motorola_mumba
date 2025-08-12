@@ -293,6 +293,7 @@ PRODUCT_SHIPPING_API_LEVEL := 36
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal \
+    android.frameworks.sensorservice@1.0 \
     sensors.dynamic_sensor_hal \
     sensors.moto_ext
 
