@@ -304,9 +304,6 @@ media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 # Media (Dolby)
 ro.vendor.dolby.dax.version=DAX3_3.12.0.8_r1
 
-# FRP
-ro.frp.pst=/dev/block/bootdevice/by-name/frp
-
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
