@@ -29,3 +29,10 @@ prebuilt_etc {
     src: "ueventd.qcom.rc",
     soc_specific: true,
 }
+
+prebuilt_etc {
+    name: "init.qcom.rc",
+    src: "init.qcom.rc",
+    sub_dir: "init/hw",
+    soc_specific: true,
+}
