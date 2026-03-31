@@ -11,4 +11,11 @@
             <instance>default</instance>
         </interface>
     </hal>
+   <hal format="aidl" optional="true">
+        <name>motorola.hardware.rpmb</name>
+        <interface>
+            <name>IMotoRpmbHardware</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>
