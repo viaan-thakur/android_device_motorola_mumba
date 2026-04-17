@@ -71,6 +71,35 @@ PRODUCT_PACKAGES += \
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := true
 
+# Moto hardware
+PRODUCT_PACKAGES += \
+    MotoActions \
+    MotoCommonOverlay
+
+# Overlay
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
+PRODUCT_PACKAGES += \
+    DeviceAsWebcamResCommon \
+    FrameworksResCommon \
+    LineageSdkCommon \
+    SettingsCommon \
+    SystemUIResCommon \
+    TelephonyResCommon \
+    WifiResCommon \
+    FrameworksResTarget \
+    WifiResTarget
+
+PRODUCT_PACKAGES += \
+    FrameworksResDevice \
+    LineageSystemUIDevice \
+    SettingsResDevice \
+    SystemUIResDevice \
+    WifiResDevice
+
+PRODUCT_PACKAGES += \
+    NcmTetheringOverlay
+
 # Keymint
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore_V3.xml
