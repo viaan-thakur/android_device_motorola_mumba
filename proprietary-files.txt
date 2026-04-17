@@ -577,6 +577,7 @@ vendor/etc/display/formats.json
 vendor/etc/display/graphics_alignments.json
 vendor/etc/display/ubwc_alignments.json
 vendor/etc/display/video_alignments.json
+vendor/etc/displayconfig/display_id_4630946916234099603.xml
 
 # Display postprocessing
 vendor/bin/hw/vendor.qti.hardware.display.color-service
