@@ -849,7 +849,7 @@ vendor/firmware/vpu20_4v_unsigned.mbn
 
 # Touch firmware (recovery)
 vendor/firmware/boe_chipone_firmware.bin:recovery/root/vendor/firmware/boe_chipone_firmware.bin
-vendor/firmware/csot_chipone_firmware.bin:csot_chipone_firmware.bin
+vendor/firmware/csot_chipone_firmware.bin:recovery/root/vendor/firmware/csot_chipone_firmware.bin
 vendor/firmware/ILITEK_FW_TXD:recovery/root/vendor/firmware/ILITEK_FW_TXD
 
 # Graphics (Adreno)
