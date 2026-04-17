@@ -169,6 +169,15 @@ TARGET_USERIMAGES_USE_F2FS := true
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 include hardware/motorola/sepolicy/qti/SEPolicy.mk
 
+# Manifest
+ODM_MANIFEST_SKUS += b d dn dne n ne
+ODM_MANIFEST_B_FILES := $(DEVICE_PATH)/vintf/sku/manifest_b.xml $(DEVICE_PATH)/vintf/manifest_parrot_ss.xml
+ODM_MANIFEST_D_FILES := $(DEVICE_PATH)/vintf/sku/manifest_d.xml
+ODM_MANIFEST_DN_FILES := $(DEVICE_PATH)/vintf/sku/manifest_dn.xml
+ODM_MANIFEST_DNE_FILES := $(DEVICE_PATH)/vintf/sku/manifest_dne.xml
+ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/vintf/sku/manifest_n.xml
+ODM_MANIFEST_NE_FILES := $(DEVICE_PATH)/vintf/sku/manifest_ne.xml
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --prop com.android.build.boot.security_patch:$(VENDOR_SECURITY_PATCH)
