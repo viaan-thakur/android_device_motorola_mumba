@@ -169,6 +169,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 include hardware/motorola/sepolicy/qti/SEPolicy.mk
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # Manifest
 ODM_MANIFEST_SKUS += b d dn dne n ne
 ODM_MANIFEST_B_FILES := $(DEVICE_PATH)/vintf/sku/manifest_b.xml $(DEVICE_PATH)/vintf/manifest_parrot_ss.xml
