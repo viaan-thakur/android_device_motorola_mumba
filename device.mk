@@ -144,6 +144,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-euiccgoogle.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-euiccgoogle.xml
+
 # Fastboot
 PRODUCT_PACKAGES += \
     fastbootd
@@ -381,6 +384,10 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     hardware/motorola/vintf/device_framework_matrix.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix_aidl.xml
+DEVICE_MANIFEST_FILE += \
+    $(CONFIG_HAL_SRC_DIR)/manifest_audio_qti_services.xml \
+    $(DEVICE_PATH)/vintf/manifest_parrot.xml \
+    $(DEVICE_PATH)/vintf/manifest.xml
 
 # WiFi
 PRODUCT_PACKAGES += \
