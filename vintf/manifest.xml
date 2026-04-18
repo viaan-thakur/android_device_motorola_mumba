@@ -12,11 +12,6 @@
         <fqname>ISecureElement/eSE1</fqname>
     </hal>
     <hal format="aidl">
-        <name>motorola.hardware.power</name>
-        <version>2</version>
-        <fqname>IMdpfExt/default</fqname>
-    </hal>
-    <hal format="aidl">
         <name>vendor.nxp.nxpnfc_aidl</name>
         <fqname>INxpNfc/default</fqname>
     </hal>
