@@ -254,7 +254,7 @@ PRODUCT_PACKAGES += \
 TARGET_USES_ST_NFC := true
 
 PRODUCT_PACKAGES += \
-    android.hardware.nfc-service.st
+    android.hardware.nfc-service.st \
     Tag
 
 PRODUCT_SYSTEM_PROPERTIES += \
