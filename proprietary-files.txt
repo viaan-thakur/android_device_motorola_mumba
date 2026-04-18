@@ -616,7 +616,6 @@ vendor/usr/keylayout/uinput-fpc.kl
 
 # DPM
 system_ext/bin/dpmd
-system_ext/bin/tcmd_system
 system_ext/etc/dpm/dpm.conf
 system_ext/etc/init/dpmd.rc
 system_ext/etc/permissions/com.qti.dpmframework.xml
@@ -1704,5 +1703,6 @@ vendor/lib64/libwfduibcsrc_vendor.so
 vendor/lib64/libwfduibcsrcinterface_vendor.so
 vendor/lib64/libwfdhdcpservice_proprietary.so
 vendor/lib64/libwfdutils_proprietary.so
+vendor/lib64/aidl_hdcp_interface-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
