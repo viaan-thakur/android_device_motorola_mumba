@@ -1204,6 +1204,13 @@ vendor/lib64/vendor.qti.snapdragonServices.qape-V1-ndk.so
 # QCV
 vendor/etc/init/init.qti.qcv.rc
 
+# FM
+system/lib64/vendor.qti.hardware.fm-V1-ndk.so:system_ext/lib64/vendor.qti.hardware.fm-V1-ndk.so
+system_ext/lib64/fm_helium.so
+system_ext/lib64/libfm-hci.so
+system_ext/lib64/vendor.qti.hardware.fm@1.0.so
+vendor/etc/vintf/manifest/fm_hci.xml
+
 # QMI
 system/etc/sysconfig/qti_whitelist.xml
 vendor/bin/irsc_util
