@@ -894,9 +894,7 @@ vendor/bin/init.qcom.post_boot.sh
 vendor/bin/init.qti.write.sh
 vendor/etc/init/init.qti.media.rc
 vendor/etc/init/hw/init.vendor.st21nfc.rc
-vendor/etc/init/hw/init.target.rc
 vendor/etc/init/hw/init.mmi.charge_only.rc
-vendor/etc/init/hw/init.mmi.rc
 vendor/etc/init/hw/init.mmi.overlay.rc
 
 # Kernel

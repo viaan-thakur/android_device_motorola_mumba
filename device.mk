@@ -189,8 +189,11 @@ PRODUCT_PACKAGES += \
     fstab.qcom.zram \
     fstab.qcom.vendor_ramdisk \
     init.qcom.recovery.rc \
+    init.target.rc \
+    init.mmi.rc \
     init.qcom.rc \
     ueventd.qcom.rc
+
 
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := true
