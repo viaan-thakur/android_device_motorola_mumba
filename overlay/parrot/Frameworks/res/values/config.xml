@@ -28,15 +28,6 @@
     IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
 -->
 <resources>
-    <!-- When true use the linux /dev/input/event subsystem to detect the switch changes
-    on the headphone/microphone jack. When false use the older uevent framework -->
-    <bool name="config_useDevInputEventForAudioJack">true</bool>
-
-   <!-- Package names to use with vendor iwlan implementation. -->
-   <string name="config_wlan_data_service_package" translatable="false">vendor.qti.iwlan</string>
-   <string name="config_wlan_network_service_package" translatable="false">vendor.qti.iwlan</string>
-   <string name="config_qualified_networks_service_package" translatable="false">vendor.qti.iwlan</string>
-
    <!-- Default list of files pinned by the Pinner Service -->
    <string-array translatable="false" name="config_defaultPinnerServiceFiles">
         <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
@@ -54,9 +45,4 @@
     <!-- Flag indicating whether we should enable smart battery. -->
     <bool name="config_smart_battery_available">true</bool>
 
-    <!-- Whether the device enable the standalone (SA) mode of 5G NR.-->
-    <bool name="config_telephony5gStandalone">true</bool>
-
-    <!-- Whether the device enable the non-standalone (NSA) mode of 5G NR.-->
-    <bool name="config_telephony5gNonStandalone">true</bool>
 </resources>

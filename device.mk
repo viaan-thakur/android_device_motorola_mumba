@@ -216,6 +216,8 @@ PRODUCT_PACKAGES += \
     MotoCommonOverlay
 
 # Overlay
+$(call inherit-product, hardware/qcom-caf/common/overlay/qssi/qssi.mk)
+
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
@@ -224,10 +226,7 @@ PRODUCT_PACKAGES += \
     LineageSdkCommon \
     SettingsCommon \
     SystemUIResCommon \
-    TelephonyResCommon \
-    WifiResCommon \
-    FrameworksResTarget \
-    WifiResTarget
+    FrameworksResTarget
 
 PRODUCT_PACKAGES += \
     FrameworksResDevice \
