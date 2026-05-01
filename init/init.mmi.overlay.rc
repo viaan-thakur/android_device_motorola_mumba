@@ -204,8 +204,8 @@ on property:sys.boot_completed=1
     chmod 0644 /mnt/vendor/persist/data/pfm/licenses/qcom_gps_license.pfm
 
    # Set adaptive charging perms for HAL
-    chown system system /sys/module/qpnp_adaptive_charge/parameters/upper_limit
-    chown system system /sys/module/qpnp_adaptive_charge/parameters/lower_limit
+    chown system system /sys/module/qpnp_adaptive_charge/parameters/charging_enabled
+    chmod 0660 /sys/module/qpnp_adaptive_charge/parameters/charging_enabled
 
     write /proc/sys/vm/dirty_background_bytes 26214400
     write /proc/sys/vm/dirty_bytes 104857600
