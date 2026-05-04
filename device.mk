@@ -258,10 +258,6 @@ PRODUCT_PACKAGES += \
 # NFC
 TARGET_USES_ST_NFC := true
 
-PRODUCT_PACKAGES += \
-    android.hardware.nfc-service.st \
-    Tag
-
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.nfc_cfg.config_file_name=libnfc-nci-st.conf
 PRODUCT_VENDOR_PROPERTIES += \
