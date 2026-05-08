@@ -232,6 +232,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FrameworksResDevice \
     LineageSystemUIDevice \
+    LineageSettingsDevice \
     SettingsResDevice \
     SystemUIResDevice \
     WifiResDevice
