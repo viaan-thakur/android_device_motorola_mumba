@@ -958,7 +958,6 @@ vendor/lib64/libnativecosupdateapi-thales.so
 # NFC
 vendor/bin/hw/android.hardware.nfc-service-st
 vendor/bin/STFlashTool
-vendor/lib64/android.hardware.nfc-V1-ndk.so
 
 # NFC Configs
 vendor/etc/init/nfc-service-st.rc
