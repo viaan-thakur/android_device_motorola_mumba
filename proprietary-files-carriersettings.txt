@@ -182,11 +182,13 @@ product/etc/CarrierSettings/s21404spn_3d_llamaya.pb
 product/etc/CarrierSettings/s21404spn_3d_lycamobile.pb
 product/etc/CarrierSettings/s21404spn_3d_masmovil.pb
 product/etc/CarrierSettings/s21404spn_3d_mobilr.pb
+product/etc/CarrierSettings/s21404spn_3d_parlem.pb
 product/etc/CarrierSettings/s21404spn_3d_pepephone.pb
 product/etc/CarrierSettings/s21404spn_3d_populoos.pb
 product/etc/CarrierSettings/s21404spn_3d_r.pb
 product/etc/CarrierSettings/s21404spn_3d_racc.pb
 product/etc/CarrierSettings/s21404spn_3d_racctel_2b_.pb
+product/etc/CarrierSettings/s21404spn_3d_simple.pb
 product/etc/CarrierSettings/s21404spn_3d_sweno.pb
 product/etc/CarrierSettings/s21404spn_3d_telecable.pb
 product/etc/CarrierSettings/s21404spn_3d_tu_20_operador.pb
