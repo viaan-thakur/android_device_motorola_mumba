@@ -156,7 +156,6 @@ vendor/etc/charger_fw_fstab.qti
 
 # SXF
 vendor/bin/hw/motosxf
-vendor/bin/motobox
 vendor/etc/init/motosxf.rc
 vendor/etc/motosxf_conf_profile
 vendor/etc/vintf/manifest/vendor.motorola.hardware.sxf.service.xml
@@ -1537,7 +1536,6 @@ vendor/lib64/libspatializerparamstorage.so
 vendor/lib64/libdapparamstorage.so
 vendor/lib64/libssc.so
 vendor/lib64/libssc_default_listener.so
-vendor/lib64/motorola.hardware.sensors-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate-V1-ndk.so
 
 # Sensors (Motorola)

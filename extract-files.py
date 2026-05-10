@@ -78,10 +78,6 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.graphics.allocator-V1-ndk.so', 'android.hardware.graphics.allocator-V2-ndk.so'),
     'system_ext/lib64/libwfdnative.so': blob_fixup()
         .add_needed('libinput_shim.so'),
-    'vendor/etc/wfdconfig.xml': blob_fixup()
-        .regex_replace('<M4Enable>0</M4Enable>', '<M4Enable>1</M4Enable>')
-        .regex_replace('<UIBCValid>0</UIBCValid>', '<UIBCValid>1</UIBCValid>')
-        .regex_replace('<USB>1</USB>', '<USB>3</USB>'),
     'vendor/lib64/libwfdmmsrc_proprietary.so': blob_fixup()
         .replace_needed('android.media.audio.common.types-V2-ndk.so', 'android.media.audio.common.types-V3-ndk.so'),
     'vendor/lib64/libqcodec2_core.so': blob_fixup()
