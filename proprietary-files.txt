@@ -927,6 +927,9 @@ vendor/lib64/libspukeymint.so
 vendor/lib64/libspukeymintdeviceutils.so
 vendor/lib64/libspukeymintutils.so
 
+# Weaver
+vendor/bin/hw/android.hardware.weaver-service-spu-qti
+
 # Secure element
 vendor/bin/hw/android.hardware.secure_element-service.thales
 vendor/etc/permissions/android.hardware.opengles.aep.xml
