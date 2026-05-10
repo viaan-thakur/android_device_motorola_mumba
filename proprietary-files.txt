@@ -1202,6 +1202,21 @@ vendor/lib64/libqms.so
 vendor/lib64/vendor.qti.qspmhal-V1-ndk.so
 vendor/lib64/vendor.qti.qspmhal-impl.so
 
+# Motorola Health
+vendor/bin/hw/android.hardware.health-service.qti
+vendor/bin/hw/motorola.hardware.health-service
+vendor/bin/hw/motorola.hardware.health.storage-service
+vendor/etc/init/android.hardware.health-service.qti.rc
+vendor/etc/init/motorola.hardware.health.service.rc
+vendor/etc/init/motorola.hardware.health.storage.service.rc
+vendor/etc/vintf/manifest/android.hardware.health-service.qti.xml
+vendor/etc/vintf/manifest/motorola.hardware.health.service.xml
+vendor/etc/vintf/manifest/motorola.hardware.health.storage.service.xml
+vendor/lib64/libmotohid.so
+vendor/lib64/motorola.hardware.health.aidl-V1-ndk.so
+vendor/lib64/motorola.hardware.health.storage.aidl-V1-ndk.so
+vendor/lib64/motorola.hardware.health.storage@1.0.so
+
 # RIL - UIM
 product/app/uimgbaservice/uimgbaservice.apk
 product/etc/permissions/UimGba.xml
