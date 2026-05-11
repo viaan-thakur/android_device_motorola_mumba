@@ -176,9 +176,7 @@ vendor/lib64/motorola.hardware.fdr-V1-ndk.so
 
 # Camera
 vendor/bin/hw/vendor.qti.camera.provider-service_64
-vendor/bin/hw/motorola.hardware.camera.desktop@2.0-service
 vendor/etc/init/vendor.qti.camera.provider-service_64.rc
-vendor/etc/init/motorola.hardware.camera.desktop@2.0-service.rc
 vendor/etc/bstconfig/bstai_hdr
 vendor/etc/bstconfig/hdrcfg.cfg
 vendor/etc/camera/arcsoft_calibration_u_dc.bin
