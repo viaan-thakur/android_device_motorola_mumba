@@ -67,11 +67,12 @@ BOARD_INIT_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
 
 # Boot
+BOARD_USES_GENERIC_KERNEL_IMAGE := true
 BOARD_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 # Kernel
-BOARD_KERNEL_CMDLINE := \
+BOARD_KERNEL_CMDLINE += \
     video=vfb:640x400,bpp=32,memsize=3072000 \
     console=ttynull \
     nosoftlockup \
@@ -80,7 +81,7 @@ BOARD_KERNEL_CMDLINE := \
     qcom_geni_serial.con_enabled=0 \
     sysctl.kernel.firmware_config.force_sysfs_fallback=1
 
-BOARD_BOOTCONFIG := \
+BOARD_BOOTCONFIG += \
     androidboot.hardware=qcom \
     androidboot.load_modules_parallel=true \
     androidboot.memcg=1 \
@@ -92,6 +93,12 @@ BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_RAMDISK_USE_LZ4 := true
+TARGET_KERNEL_NO_GCC := true
+INLINE_KERNEL_BUILDING := true
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_NO_KERNEL := false
+BOARD_KERNEL_BINARIES := kernel
+TARGET_KERNEL_VERSION := 6.6
 
 # Prebuilt Kernel
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
