@@ -66,42 +66,36 @@ TARGET_MERGE_DTBS_WILDCARD ?= parrot*base
 BOARD_INIT_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
 
+# Boot
+BOARD_BOOT_HEADER_VERSION := 4
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
+
 # Kernel
-BOARD_KERNEL_CMDLINE += \
+BOARD_KERNEL_CMDLINE := \
+    video=vfb:640x400,bpp=32,memsize=3072000 \
     console=ttynull \
     nosoftlockup \
     printk.devkmsg=on \
+    firmware_class.path=/vendor/firmware_mnt/image \
     qcom_geni_serial.con_enabled=0 \
     sysctl.kernel.firmware_config.force_sysfs_fallback=1
 
-BOARD_BOOTCONFIG += \
+BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
     androidboot.load_modules_parallel=true \
     androidboot.memcg=1 \
     androidboot.usbcontroller=a600000.dwc3 \
+    androidboot.hypervisor.protected_vm.supported=true \
     androidboot.vendor.qspa=true \
     androidboot.selinux=permissive
 
-BOARD_BOOT_HEADER_VERSION := 4
-BOARD_USES_GENERIC_KERNEL_IMAGE := true
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
-BOARD_RAMDISK_OFFSET     := 0x02000000
 BOARD_RAMDISK_USE_LZ4 := true
-BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
-TARGET_KERNEL_NO_GCC := true
 
 # Prebuilt Kernel
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
-PREBUILT_PATH := $(DEVICE_PATH)-kernel
-
-INLINE_KERNEL_BUILDING := true
-TARGET_FORCE_PREBUILT_KERNEL := true
-TARGET_NO_KERNEL := false
-BOARD_KERNEL_BINARIES := kernel
-TARGET_KERNEL_VERSION := 6.6
 PREBUILT_PATH := $(DEVICE_PATH)-kernel
 TARGET_NO_KERNEL_OVERRIDE := true
 TARGET_KERNEL_SOURCE := $(PREBUILT_PATH)/kernel-headers
