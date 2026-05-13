@@ -200,6 +200,7 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     init.mmi.rc \
     init.qcom.rc \
+    init.mmi.overlay.rc \
     init.vendor.st21nfc.rc \
     ueventd.qcom.rc
 
