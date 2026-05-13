@@ -58,6 +58,3 @@ telephony.lteOnCdmaDevice=1
 
 # Wi-Fi
 ro.wifi.channels=
-
-# Wi-Fi Display
-persist.sys.wfd.virtual=0
