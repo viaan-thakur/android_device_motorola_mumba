@@ -45,6 +45,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.vendor.st21nfc.rc",                                           
+    src: "init.vendor.st21nfc.rc",  
+    sub_dir: "init/hw",
+    soc_specific: true,
+}
+
+prebuilt_etc {
     name: "init.mmi.rc",
     src: "init.mmi.rc",
     sub_dir: "init/hw",
