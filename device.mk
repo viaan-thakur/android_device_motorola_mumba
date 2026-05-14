@@ -202,7 +202,8 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.mmi.overlay.rc \
     init.vendor.st21nfc.rc \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    ueventd-odm.rc
 
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := true
