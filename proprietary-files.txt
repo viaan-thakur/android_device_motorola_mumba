@@ -1722,6 +1722,7 @@ vendor/bin/wfdhdcphalservice
 vendor/bin/wfdvndservice
 vendor/bin/wifidisplayhalservice
 vendor/etc/wfd.hdcp.bin
+vendor/etc/init/vendor.tsa.hdcp-IHDCPInterface.rc
 vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
 vendor/etc/init/wfdvndservice.rc
