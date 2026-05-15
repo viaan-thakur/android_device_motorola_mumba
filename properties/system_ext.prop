@@ -35,7 +35,6 @@ vendor.camera.aux.packagelist=com.motorola.camera3,com.motorola.camera5,com.moto
 vendor.camera.aux.packagelist2=com.motorola.ccc,com.android.settings,com.motorola.motointelligence
 
 # Display
-debug.sf.enable_hwc_vds=1
 sys.brightness.disable_gamma_conversion=true
 
 # DPM
@@ -61,6 +60,9 @@ media.recorder.show_manufacturer_and_model=true
 
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
+
+# Wifi Display
+persist.debug.wfd.enable=1
 
 # NFC
 persist.nfc_cfg.config_file_name=libnfc-nci-st.conf
