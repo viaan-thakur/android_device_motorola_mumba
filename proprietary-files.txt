@@ -518,6 +518,7 @@ vendor/lib64/vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk.so
 # Connection Security
 vendor/bin/qwesd
 vendor/etc/init/qwesd.rc
+vendor/etc/init/ssgtzd.rc
 vendor/etc/seccomp_policy/qwesd@2.0.policy
 vendor/etc/ssg/ta_config.json
 vendor/etc/ssg/tz_whitelist.json
@@ -636,11 +637,14 @@ system_ext/framework/com.android.hotwordenrollment.common.util.jar
 # Input
 vendor/usr/idc/uinput-fpc.idc
 vendor/usr/keylayout/uinput-fpc.kl
+system/usr/keylayout/gpio-keys.kl:vendor/usr/keylayout/gpio-keys.kl
 
 # DPM
 system_ext/bin/dpmd
+system_ext/bin/tcmd
 system_ext/etc/dpm/dpm.conf
 system_ext/etc/init/dpmd.rc
+system_ext/etc/init/tcmd.rc
 system_ext/etc/permissions/com.qti.dpmframework.xml
 system_ext/etc/permissions/dpmapi.xml
 system_ext/framework/com.qti.dpmframework.jar
@@ -944,6 +948,10 @@ vendor/bin/hw/android.hardware.weaver-service-spu-qti
 vendor/lib64/libspukeymintdeviceutils.so
 vendor/lib64/libspukeymintutils.so
 
+# IRQ balance
+vendor/bin/msm_irqbalance
+vendor/etc/msm_irqbalance.conf
+
 # Secure element
 vendor/bin/hw/android.hardware.secure_element-service.thales
 vendor/etc/permissions/android.hardware.opengles.aep.xml
@@ -1138,10 +1146,15 @@ vendor/lib64/vendor.qti.qccvndhal_aidl-halimpl.so
 
 # QESDK
 vendor/bin/qesdk-manager
+vendor/bin/snapdragon_services
 vendor/etc/init/qesdk-manager.rc
+vendor/etc/init/snapdragon_services.rc
 vendor/etc/seccomp_policy/qesdk.policy
 vendor/etc/seccomp_policy/qesdksec.policy
 vendor/etc/vintf/manifest/qesdk-manager.xml
+vendor/etc/vintf/manifest/snapdragon_services.xml
+vendor/etc/ssg/ta_config.json
+vendor/etc/ssg/tz_whitelist.json
 vendor/lib64/libqesdk2_0.so
 vendor/lib64/libqesdk_manager.so
 vendor/lib64/libqesdoem_query_sys.so
@@ -1294,6 +1307,8 @@ vendor/bin/qms
 vendor/bin/qti
 vendor/bin/rmt_storage
 vendor/bin/shsusrd
+vendor/bin/qtigetprop
+vendor/bin/qtisetprop
 vendor/bin/tlpd
 vendor/bin/vendor.qti.syshealthmon-service
 vendor/etc/data/dsi_config.xml
@@ -1550,6 +1565,7 @@ vendor/lib64/sensors.moto.so
 vendor/lib64/sensors.ssc.so
 
 # Tcmd
+vendor/bin/mot_tcmd
 vendor/lib64/motorola.hardware.tcmdaidl-V1-ndk.so
 
 # Sensors configs
@@ -1630,6 +1646,7 @@ vendor/etc/init/vendor.qti.tftp.rc
 vendor/bin/thermal-engine-v2
 vendor/etc/init/init_thermal-engine-v2.rc
 vendor/lib64/libthermalclient.so
+vendor/lib64/liblmthermallistner.so
 
 # Thermal configs
 vendor/etc/thermal-engine-mumba-auto.conf
