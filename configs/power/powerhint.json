@@ -254,7 +254,7 @@
         },
         {
             "Name": "DoubleTapToWakeEnable",
-            "Path": "/sys/class/sensors/dt-gesture/enable",
+            "Path": "/sys/devices/virtual/touchscreen/primary/gesture",
             "Values": [
                 "1",
                 "0"
