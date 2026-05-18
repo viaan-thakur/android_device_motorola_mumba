@@ -80,5 +80,5 @@
     <item name="cpu.suspend">5.81</item>
     <item name="cpu.idle">5.81</item>
     <item name="cpu.active">9.97</item>
-    <item name="battery.capacity">5000</item>
+    <item name="battery.capacity">7000</item>
 </device>
