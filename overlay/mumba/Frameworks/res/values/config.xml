@@ -153,7 +153,7 @@
     </integer-array>
 
     <!-- MMS user agent string -->
-    <string name="config_mms_user_agent" translatable="false">motorolaedge50fusion</string>
+    <string name="config_mms_user_agent" translatable="false">motorolag57power</string>
 
     <!-- MMS user agent prolfile url -->
     <string name="config_mms_user_agent_profile_url" translatable="false">http://uaprof.motorola.com/phoneconfig/motov1/Profile/motov1.rdf</string>
