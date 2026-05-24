@@ -102,6 +102,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     DolbyAtmos
 
+TARGET_EXCLUDES_AUDIOFX := true
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl \
