@@ -1106,6 +1106,13 @@ system/etc/permissions/com.motorola.frameworks.core.addon.xml
 system/etc/permissions/moto-core_services.xml 
 system/etc/permissions/moto-settings.xml 
 system/etc/permissions/motoaudioeffectsdk.xml 
+system_ext/priv-app/MotoSstSoundService/MotoSstSoundService.apk
+system_ext/etc/permissions/feature-com.motorola.sstservice.xml
+system_ext/etc/permissions/privapp-permissions-com.motorola.sstservice.xml
+system_ext/etc/enable-disable-packages/enable-disable-com.motorola.sstservice.xml
+system_ext/etc/enable-disable-packages/enable-disable-com.motorola.sstservice.xml
+system_ext/etc/permissions/feature-com.motorola.sstservice.xml
+system_ext/etc/permissions/privapp-permissions-com.motorola.sstservice.xml
 product/etc/permissions/privapp-permissions-com.motorola.dynamicvolume.xml 
 product/etc/sysconfig/hiddenapi-whitelist-com.motorola.dynamicvolume.xml 
 product/etc/motorola/bgintents/com.motorola.dynamicvolume.bgintents.xml 
