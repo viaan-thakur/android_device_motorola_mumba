@@ -126,9 +126,11 @@ blob_fixups: blob_fixups_user_type = {
         .add_line_if_missing('sched_get_priority_max: 1'),
     (
         'vendor/lib64/soundfx/libbundleaidl.so',
+        'vendor/lib64/soundfx/libdlbvolaidl.so',
     ): blob_fixup()
         .replace_needed('android.media.audio.common.types-V4-ndk.so', 'android.media.audio.common.types-V3-ndk.so')
-        .replace_needed('libaudio_aidl_conversion_common_ndk.so', 'libaudio_aidl_conversion_common_ndk_prebuilt.so'),
+        .replace_needed('libaudio_aidl_conversion_common_ndk.so', 'libaudio_aidl_conversion_common_ndk_prebuilt.so')
+        .replace_needed('android.hardware.audio.effect-V2-ndk.so','android.hardware.audio.effect-V3-ndk.so'),
     'vendor/lib64/android.hardware.bluetooth.audio-impl_prebuilt.so': blob_fixup()
         .replace_needed('libbluetooth_audio_session_aidl.so', 'libbluetooth_audio_session_aidl_prebuilt.so'),
     'vendor/lib64/libaudio_aidl_conversion_common_ndk_prebuilt.so': blob_fixup()
@@ -142,6 +144,17 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/hw/android.hardware.biometrics.fingerprint-service.fpc': blob_fixup()
         .remove_needed('android.hardware.biometrics.fingerprint-V4-ndk.so')
         .remove_needed('android.hardware.biometrics.common-V4-ndk.so'),
+    (
+        'vendor/lib64/libcodec2_soft_ac4dec.so',
+        'vendor/lib64/libcodec2_soft_ddpdec.so',
+        'vendor/lib64/libdlbdsservice.so',
+        'vendor/lib64/libdlbpreg.so',
+        'vendor/lib64/soundfx/libdlbvolaidl.so',
+        'vendor/lib64/soundfx/libswdapaidl.so',
+        'vendor/lib64/soundfx/libswgamedapaidl.so',
+        'vendor/lib64/soundfx/libswspatializeraidl.so',
+    ): blob_fixup()
+        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
 } # fmt: skip
 
 extract_fns: extract_fns_user_type = {
