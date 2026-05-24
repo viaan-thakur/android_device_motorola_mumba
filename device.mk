@@ -99,7 +99,7 @@ PRODUCT_COPY_FILES += \
 
 # Dolby
 PRODUCT_PACKAGES += \
-    LunarisDolby
+    DolbyAtmos
 
 # Bluetooth
 PRODUCT_PACKAGES += \
