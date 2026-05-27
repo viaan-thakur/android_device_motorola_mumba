@@ -132,7 +132,7 @@ BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(RAMDISK_MODULES_PATH)/mo
 BOARD_USES_METADATA_PARTITION := true
 
 # Partitions
--include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/custom/config/BoardConfigReservedSize.mk
 BOARD_BUILD_VENDOR_RAMDISK_IMAGE := true
 
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 32)
